@@ -1,0 +1,23 @@
+Vyrobte si tabulku typ_prselo se sloupcem prselo 
+- nevyplneno
+- neprselo
+- prselo
+- prselo moc
+
+Tabulku nahrajte do datového modelu
+
+Vyrobte si z typ_prselo[prselo] kontingenční tabulku a spočítejte, 
+pokud:
+-	nevyplneno: počet datumu kdy srazky nebyly vyplneny
+-	neprselo: počet datumu kdy srazky jsou 0
+-	prselo: počet datumu kdy srazky jsou <= 10
+-	prselo moc: počet datumu, kdy srazky jsou nad 10
+
+Vyrobte si kontingenční tabulku se sloupcem data[rok] a spočítejte VŠECHNY datumy, ve kterých v daném roce napadly maximální srážky
+Lokality, které v daném roce nevyplnily alespoň jednou srazky
+
+
+
+
+
+
