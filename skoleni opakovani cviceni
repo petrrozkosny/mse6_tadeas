@@ -1,0 +1,32 @@
+Do nového souboru
+
+-	nahrajte: data_nova, data_stara, dim_oblasti
+-	spojte pod sebe data_nova a data_stara do nového dotazu data
+-	vyberte pouze sloupce: lokalita,datum,srazky
+-	zkontrolujte a případně upravte datové typy
+-	dopočítejte sloupce:
+o	rok: tj. rok z datumu
+o	mesic: tj. číslo měsíce z datumu
+o	typ_srazek:
+	pokud srazky = 0 tak neprselo
+	pokud srazky > 0 tak prselo
+	pokud srazky jsou null tak nevyplneno
+-	v dim_oblasti:
+o	zkontrolujte datové typy
+o	vyplňte chybějící země
+-	nahrajte pouze data, dim_oblasti do datového modelu
+-	vytvořte kontingenční tabulku se strukturou:
+o	řádky:
+	rok
+	lokalita
+-	spočítejte počítané míry:
+o	01 suma srazek: suma srážek v roce a lokalitě vizuálu
+o	02 suma srazek 7: suma srážek v roce a lokalitě vizuálu, měsíc 7
+o	03  suma srazek předchozí rok. suma srážek v lokalitě vizuálu, ale předchozím roce
+o	04 datum max srazek: maximální datum maximálních srážek v roce a lokalitě vizuálu
+-	vytvořte kontingenční tabulku se strukturou:
+o	řádky:
+	lokalita
+-	spočítejte kalkulované míry:
+o	05 max srazky: maximální srážek y lokalitě vizuálu
+o	06 srazky max datum: suma srážek v lokalitě vizuálu k poslednímu datumu v datasetu
