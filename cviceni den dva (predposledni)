@@ -1,0 +1,18 @@
+
+-	Vytvořte si v Excel tabulku „typ_roku“ se sloupcem „rok“, který bude mít hodnoty:
+o	minimalni
+o	maximalni
+-	Tabulku nahrajte do datového modelu
+-	Vytvořte si kontingenční tabulku s typ_roku[rok] na řádku a dopočítejte sumu srážek pro daný typ roku, tj:
+o	minimalni = suma srážek za první rok datasetu
+o	maximalni = suma srážek za poslední rok datasetu
+-	Vytvořte si v Excel tabulku „funkce“ se sloupcem „agregace“ a hodnotami:
+o	soucet
+o	prumer
+o	maximum
+-	Tabulku si nahrajte do datového modelu
+-	Vytvořte sloupcový graf s data[mesic] na osa x
+-	Vytvořte si průřez and dim_roky[rok] a funkce[agregace]
+-	Spočítejte:
+o	Za vybraný rok a měsíc vybranou agregační funkci
+o	Za předchozí rok, měsíc vizuaálu, vybranou agregační funkci
